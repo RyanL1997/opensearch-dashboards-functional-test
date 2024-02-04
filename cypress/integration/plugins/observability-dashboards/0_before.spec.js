@@ -9,9 +9,7 @@ import { testIndexDataSet, BASE_PATH } from '../../../utils/constants';
 
 describe('Before', () => {
   before(() => {
-    cy.deleteAllIndices();
-
-    localStorage.setItem('home:welcome:show', 'true');
+    localStorage.setItem('home:welcome:show', 'false');
 
     cy.visit(`${BASE_PATH}/app/home#/tutorial_directory/sampleData`);
 
